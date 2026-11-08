@@ -6,7 +6,7 @@ import { SideBar } from './Components/SideBar'
 
 function App() {
   const [notes, setNotes] = useState([]);
-  const [activeNode, setActiveNote] = useState();
+  const [activeNote, setActiveNote] = useState();
 
   //ノートを追加
   const onAddNote = () => {
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <SideBar onAddNote={onAddNote} onDeleteNote={onDeleteNote} notes={notes} setActiveNote={setActiveNote} activeNote={activeNode} />
+      <SideBar onAddNote={onAddNote} onDeleteNote={onDeleteNote} notes={notes} setActiveNote={setActiveNote} activeNote={activeNote} />
       <Main />
     </div>
   )
