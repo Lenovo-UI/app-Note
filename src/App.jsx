@@ -25,10 +25,15 @@ function App() {
     setNotes(newNotes);
   }
 
+  const getActiveNote = () => {
+    const resultNote = notes.find((note) => note.id === activeNote);
+    return resultNote;
+  }
+
   return (
     <div className="App">
       <SideBar onAddNote={onAddNote} onDeleteNote={onDeleteNote} notes={notes} setActiveNote={setActiveNote} activeNote={activeNote} />
-      <Main />
+      <Main activeNote={getActiveNote()}/>
     </div>
   )
 }

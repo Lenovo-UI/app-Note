@@ -3,6 +3,15 @@
   height: 100vh;
 }
 
+.app-main-no-active-note{
+  width: 70%;
+  height: 100vh;
+  line-height: 100vh;
+  font-size: 2rem;
+  text-align: center;
+  color: #999;
+}
+
 .app-main-note-edit,
 .app-main-note-preview{
   height: 50vh;
